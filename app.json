@@ -1,0 +1,13 @@
+{
+  "package_id": "com.arabicprompter.g2",
+  "edition": "202601",
+  "name": "Arabic Prompter",
+  "version": "1.0.0",
+  "min_sdk_version": "0.0.16",
+  "tagline": "Arabic teleprompter for Even G2",
+  "description": "Teleprompter that shows Arabic (right-to-left, fully shaped) scripts on Even G2 by rendering the text as images on the phone.",
+  "author": "Arabic Prompter",
+  "entrypoint": "index.html",
+  "permissions": [],
+  "supported_languages": ["en"]
+}

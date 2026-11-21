@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>الملقّن العربي</title>
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <h1>الملقّن العربي</h1>
+        <span id="status" class="status">جارٍ الاتصال…</span>
+      </header>
+
+      <section class="preview">
+        <canvas id="preview" width="576" height="288"></canvas>
+        <div class="pager">
+          <button id="prev" type="button" aria-label="السابق">السابق</button>
+          <span id="counter">١ / ١</span>
+          <button id="next" type="button" aria-label="التالي">التالي</button>
+        </div>
+        <div class="row">
+          <button id="play" type="button" class="primary">تشغيل تلقائي</button>
+          <button id="restart" type="button">من البداية</button>
+        </div>
+      </section>
+
+      <section>
+        <label for="script">النص</label>
+        <textarea id="script" rows="9" dir="auto" placeholder="الصق أو اكتب نصّك هنا…"></textarea>
+        <div class="row">
+          <button id="paste" type="button">لصق من الحافظة</button>
+          <button id="clear" type="button">مسح</button>
+        </div>
+      </section>
+
+      <section>
+        <label>حجم الخط</label>
+        <div class="seg" id="size">
+          <button type="button" data-v="3">متوسط</button>
+          <button type="button" data-v="2">كبير</button>
+          <button type="button" data-v="1">كبير جدًا</button>
+        </div>
+
+        <label>مساحة العرض</label>
+        <div class="seg" id="area">
+          <button type="button" data-v="full">الشاشة كاملة</button>
+          <button type="button" data-v="half">النصف العلوي (أسرع)</button>
+        </div>
+
+        <label class="check"><input id="bold" type="checkbox" /> خط عريض</label>
+
+        <label for="wpm">سرعة التشغيل التلقائي: <b id="wpmVal"></b> كلمة/دقيقة</label>
+        <input id="wpm" type="range" min="50" max="220" step="5" />
+      </section>
+
+      <section class="help">
+        <b>التحكم من النظارة أو الخاتم</b>
+        <ul>
+          <li>سحب للأسفل: الصفحة التالية</li>
+          <li>سحب للأعلى: الصفحة السابقة</li>
+          <li>نقرة: التالي (يدوي) أو إيقاف/متابعة (تلقائي)</li>
+          <li>نقرتان: الخروج</li>
+        </ul>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
