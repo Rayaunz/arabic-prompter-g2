@@ -13,7 +13,7 @@ export const TILE_H = 144
 export const FONT_FAMILY = '"Noto Sans Arabic", "Geeza Pro", "Noto Naskh Arabic", system-ui, sans-serif'
 
 export interface LayoutOptions {
-  /** Lines per 144px band: 1 = huge, 2 = large, 3 = medium. */
+  /** Lines per 144px band: 1 = huge, 2 = large, 3 = medium, 4 = small. */
   linesPerBand: number
   /** Use only the top half of the display (2 images instead of 4, twice as fast). */
   halfScreen: boolean
